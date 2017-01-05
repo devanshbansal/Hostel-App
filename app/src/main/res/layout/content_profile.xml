@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"   style="@style/matchWidthheightMatch"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_profile" tools:context="com.ektastudio.engggirl.hostliz.Profile">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+ <TextView
+     android:id="@+id/textVersion"
+     style="@style/matchWidthWrapHeight"
+     android:textStyle="bold"
+     android:layout_marginTop="5dp"
+     android:padding="10dp"
+     android:text="@string/version"
+
+     />
+<TextView
+    style="@style/matchWidthWrapHeight"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:textStyle="bold"
+    android:layout_below="@+id/textVersion"
+    android:id="@+id/appName"
+    android:text="@string/app_name1"
+    />
+    <TextView
+        android:id="@+id/android_v"
+        style="@style/matchWidthWrapHeight"
+        android:layout_below="@+id/appName"
+        android:text="@string/android_version"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/about_app"
+       style="@style/matchWidthWrapHeight"
+        android:layout_below="@+id/android_v"
+        android:text="@string/about"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+

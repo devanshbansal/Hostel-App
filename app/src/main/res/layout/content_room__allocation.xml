@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/matchWidthheightMatch"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ektastudio.engggirl.hostelapp1.AllocateRoomsToStudent"
+    android:orientation="vertical"
+
+    >
+    <Button
+        android:id="@+id/buttonRoomAllocationtop"
+       style="@style/matchWidthWrapHeight"
+        android:drawableLeft="@drawable/ic_keyboard_arrow_left_white_24dp"
+        android:background="@color/colorPrimary"
+        android:text="Allocate Room"
+        />
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/buttonRoomAllocationtop"
+        android:padding="10dp"
+        >
+        <TextView
+          style="@style/wrapWidthheightWrap"
+            android:id="@+id/TextHead"
+            android:text="@string/userHead"
+            android:textStyle="bold"
+            android:textColor="#795548"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+           style="@style/wrapWidthheightWrap"
+            android:id="@+id/TextAdmin"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#795548"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputName"
+        style="@style/matchWidthWrapHeight"
+        android:layout_marginLeft="20dp"
+
+        >
+        <EditText
+            android:id="@+id/editName"
+            style="@style/matchWidthWrapHeight"
+            android:hint="Enter name of Student"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputRoll"
+        style="@style/matchWidthWrapHeight"
+        android:layout_marginLeft="20dp"
+        >
+        <EditText
+            android:id="@+id/editRollno"
+            style="@style/matchWidthWrapHeight"
+            android:hint="Enter Roll no. of Student"
+            />
+    </android.support.design.widget.TextInputLayout>
+       <LinearLayout
+           style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+           android:padding="5dp"
+        >
+
+        <TextView
+            style="@style/wrapWidthheightWrap"
+            android:text="Hostel"
+            />
+        <Spinner
+            android:paddingLeft="10dp"
+            android:id="@+id/spinnerHostel"
+            style="@style/matchWidthWrapHeight"
+
+            ></Spinner>
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+
+        >
+
+        <TextView
+            style="@style/wrapWidthheightWrap"
+            android:text="Floor"
+            />
+
+        <Spinner
+            android:paddingLeft="10dp"
+            android:id="@+id/spinnerFloor"
+            style="@style/matchWidthWrapHeight"
+
+            ></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        >
+
+        <TextView
+            style="@style/wrapWidthheightWrap"
+            android:text="Room"
+            />
+
+        <Spinner
+            android:paddingLeft="10dp"
+            android:id="@+id/spinnerRoom"
+            style="@style/matchWidthWrapHeight"
+            ></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginLeft="20dp"
+        >
+        <Button
+            android:id="@+id/btnAllocate"
+            style="@style/wrapWidthheightWrap"
+            android:text="Allocate"
+            android:layout_weight="50"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/holo_orange_dark"
+            />
+        <Button
+            android:id="@+id/btnCancel"
+           style="@style/wrapWidthheightWrap"
+            android:text="Cancel"
+            android:layout_weight="50"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/holo_orange_dark"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

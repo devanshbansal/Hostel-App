@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/matchWidthheightMatch"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.ektastudio.engggirl.hostliz.Update_Student"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/buttonWardenLoginTop"
+       style="@style/matchWidthWrapHeight"
+        android:drawableLeft="@drawable/ic_keyboard_arrow_left_white_24dp"
+        android:background="@color/colorPrimary"
+        android:text="Update"
+
+        />
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/textUser"
+           style="@style/wrapWidthheightWrap"
+            android:text="Student Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editUser"
+            style="@style/matchWidthWrapHeight"
+            android:layout_marginLeft="10dp"
+            android:ems="10" >
+
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/textCount"
+            style="@style/wrapWidthheightWrap"
+            android:text="Roll number"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editRoll"
+           android:layout_marginLeft="25dp"
+            style="@style/matchWidthWrapHeight"            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/textState"
+            style="@style/wrapWidthheightWrap"
+            android:text="Hostel name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/editHostel"
+           android:layout_marginLeft="20dp"
+            style="@style/matchWidthWrapHeight"            />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/textFloor"
+            style="@style/wrapWidthheightWrap"
+            android:text="Floor No:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/editFloor"
+            android:inputType="number"
+            android:layout_marginLeft="50dp"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/matchWidthWrapHeight"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/textRoom"
+            style="@style/wrapWidthheightWrap"
+            android:text="Room No:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/editRoom"
+            android:inputType="number"
+            android:layout_marginLeft="45dp"
+            style="@style/matchWidthWrapHeight"
+
+            android:layout_weight="0.61" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Update Student"
+        android:id="@+id/button"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        />
+
+</LinearLayout>

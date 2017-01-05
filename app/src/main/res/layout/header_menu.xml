@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchWidthWrapHeight"
+android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        style="@style/wrapWidthheightWrap"
+        android:padding="10dp"
+
+        android:weightSum="1"
+    >
+        <ImageButton
+            style="@style/headerMenuItem"
+            android:id="@+id/home_icon"
+            android:background="@drawable/ic_home_white_24dp"
+            android:onClick="headermenu"
+            />
+<TextView
+    android:layout_width="2dp"
+    android:layout_height="50dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/colorPrimaryDark"></TextView>
+        <ImageButton
+            style="@style/headerMenuItem"
+            android:id="@+id/info_icon"
+            android:background="@drawable/ic_info_white_24dp"
+            android:onClick="headermenu"
+            />
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryDark"></TextView>
+
+              <ImageButton
+            style="@style/headerMenuItem"
+            android:id="@+id/location_icon"
+            android:background="@drawable/ic_location_on_white_24dp"
+                  android:onClick="headermenu"
+            />
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryDark"></TextView>
+
+
+        <ImageButton
+            style="@style/headerMenuItem"
+            android:id="@+id/feedback"
+            android:background="@drawable/ic_mail_white_24dp"
+            android:onClick="headermenu"
+            />
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryDark"></TextView>
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
